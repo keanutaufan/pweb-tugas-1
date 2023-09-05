@@ -1,2 +1,4 @@
-# pweb-tugas-1
-Tugas 1 PWEB H 2023 
+# Penugasan Kelas PWEB H 2023
+
+Nama    : Keanu Fortuna Taufan
+NRP     : 5025221042
