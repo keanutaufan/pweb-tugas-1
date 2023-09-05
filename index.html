@@ -58,6 +58,36 @@
         transform: scale(1.02);
         transition: all 0.2s;
       }
+      .form-newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .input-field, .input-textarea {
+        width: 80vw;
+        padding: 8px;
+        outline: none;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .btn-primary {
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px 40px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background: hotpink;
+        color: white;
+      }
+      .btn-primary:hover {
+        cursor: pointer;
+      }
     </style>
 </head>
 <body>
@@ -126,10 +156,10 @@
         <h6>Itsuki Nakano</h6>
       </div>
     </section>
-    <section>
+    <section class="section">
       <h2>A code to remember</h2>
       <p>And I'll use this section as en excuse to write code-related tags</p>
-      <pre>
+      <pre style="text-align: left;">
         <code>
           while (alive) {
             loveItsuki();
@@ -137,33 +167,34 @@
         </code>
       </pre>
     </section>
-    <section>
+    <section class="section">
       <h2>A quote</h2>
       <blockquote>If you're not in The Church of Itsuki Nakano, I don't know what you're doing with your life</blockquote>
       <cite>Benjamin Franklin, probably</cite>
     </section>
-    <section>
+    <section class="section">
       <h2>Call to Action</h2>
       <p>So what are you waiting for?</p>
       <div>
-        <button onclick="alert('Happy to have you here!')">Join Our Church</button>
+        <button onclick="alert('Happy to have you here!')" class="btn-primary">Join Our Church</button>
       </div>
     </section>
-    <section>
+    <section class="section">
       <h2>Sign Up to Our Newsletter</h2>
-      <form>
+      <form class="form-newsletter">
         <div class="input-group">
           <div class="input-text">Your name: </div>
           <input class="input-field" type="text">
         </div>
         <div class="input-group">
           <div class="input-text">Email: </div>
-          <input class="input-field" type="text">
+          <input class="input-field" type="email">
         </div>
         <div class="input-group">
           <div class="input-text">Suggestion: </div>
-          <textarea cols="30" rows="10"></textarea>
+          <textarea cols="150" rows="10" class="input-textarea"></textarea>
         </div>
+        <button type="submit" class="btn-primary">Let's go!</button>
       </form>
     </section>
 </body>
