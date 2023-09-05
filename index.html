@@ -50,6 +50,8 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
+        overflow-x: scroll;
+        overflow-y: hidden;
       }
       .itsuki-image {
         transition: all 0.2s;
@@ -57,6 +59,18 @@
       .itsuki-image:hover {
         transform: scale(1.02);
         transition: all 0.2s;
+      }
+      .main {
+        padding: 0 20px;
+      }
+      .main > h2 {
+        text-align: center;
+      }
+      .section-sponsors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
       .form-newsletter {
         display: flex;
@@ -116,7 +130,7 @@
       <p>Itsuki Nakano will be appearing on the new specials <strong>五等分の花嫁～</strong></p>
       <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qROogTC60pI?si=4rIwhsk4KB5I4TWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
-    <main>
+    <main class="main">
       <h2>5 Reasons Why You Should Join The Church of Itsuki Nakano</h2>
       <p>If the <em>pictures</em> haven't convinced you quite <strong>yet</strong>, here are some reasons why you should join us</p>
       <ol>
@@ -127,7 +141,7 @@
         <li>Enogh questioning me</li>
       </ol>
     </main>
-    <section class="section">
+    <section class="section section-sponsors">
       <h2>Lists of Our Sponsors</h2>
       <table>
         <tr>
@@ -144,7 +158,7 @@
         </tr>
       </table>
     </section>
-    <section>
+    <section class="section">
       <h2>Headings of Itsuki Nakano</h2>
       <p>I'll use this section as an excuse to write heading 1 through 6 (though probably it's a bad idea to use more than 1 <code>h1</code> but meh)</p>
       <div>
