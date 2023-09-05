@@ -42,14 +42,21 @@
       .main-header {
         text-align: center;
       }
-      .section-images {
+      .section {
         text-align: center;
       }
       .itsuki-images {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 15px;
+      }
+      .itsuki-image {
+        transition: all 0.2s;
+      }
+      .itsuki-image:hover {
+        transform: scale(1.02);
+        transition: all 0.2s;
       }
     </style>
 </head>
@@ -65,13 +72,13 @@
       <h1>Get to know Itsuki Nakano</h1>
       <p>Welcome and enjoy your stay!</p>
     </header>
-    <section class="section-images">
+    <section class="section">
       <p>May I fancy you with pictures of Itsuki Nakano?</p>
       <div class="itsuki-images">
-        <img src="images/itsuki-1.jpg" alt="A picture of a gorgeous Itsuki Nakano" height="400">
-        <img src="images/itsuki-2.png" alt="A picture of a gorgeous Itsuki Nakano" height="400">
-        <img src="images/itsuki-3.jpg" alt="A picture of a gorgeous Itsuki Nakano" height="400">
-        <img src="images/itsuki-4.jpeg" alt="A picture of a gorgeous Itsuki Nakano" height="400">
+        <img class="itsuki-image" src="images/itsuki-1.jpg" alt="A picture of a gorgeous Itsuki Nakano" height="400">
+        <img class="itsuki-image" src="images/itsuki-2.png" alt="A picture of a gorgeous Itsuki Nakano" height="400">
+        <img class="itsuki-image" src="images/itsuki-3.jpg" alt="A picture of a gorgeous Itsuki Nakano" height="400">
+        <img class="itsuki-image" src="images/itsuki-4.jpeg" alt="A picture of a gorgeous Itsuki Nakano" height="400">
       </div>
     </section>
     <section>
